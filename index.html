@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wangui — Software Engineering Portfolio</title>
+<meta name="description" content="Portfolio of Wangui, an Applied Computer Technology student specializing in software engineering. Projects, skills, resume, and contact.">
+<meta name="theme-color" content="#0b0d10">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+
+<!-- ============ SIDEBAR ============ -->
+<aside class="side">
+  <div class="avatar-wrap">
+    <div class="avatar"><img src="assets/profile.jpg" alt="Wangui" onerror="this.remove()"><span aria-hidden="true">W</span></div>
+    <span class="dot" title="Available"></span>
+  </div>
+  <h1>Wangui</h1>
+  <span class="role"><i></i> Aspiring Software Engineer</span>
+
+  <div class="quick">
+    <div class="qrow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+      <div><span class="k">Email</span><span class="v" id="email-text">your.email@example.com</span></div>
+      <button class="copy" id="copy-btn" type="button">Copy</button>
+    </div>
+    <div class="qrow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div><span class="k">Location</span><span class="v">Kenya</span></div>
+    </div>
+    <div class="qrow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div><span class="k">Availability</span><span class="v">Open to internships &amp; graduate roles</span></div>
+    </div>
+  </div>
+
+  <div class="socials">
+    <a href="#" aria-label="GitHub">GitHub</a>
+    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    <a href="#" aria-label="Download CV">CV</a>
+  </div>
+  <a class="cta" href="#contact" data-goto="contact">Get in touch →</a>
+</aside>
+
+<!-- ============ MAIN ============ -->
+<main class="main">
+  <nav class="topbar" role="tablist" aria-label="Portfolio sections">
+    <div class="tabs">
+      <button class="tab" role="tab" id="t-about" aria-controls="about" aria-selected="true" data-t="about">About</button>
+      <button class="tab" role="tab" id="t-resume" aria-controls="resume" aria-selected="false" data-t="resume">Resume</button>
+      <button class="tab" role="tab" id="t-projects" aria-controls="projects" aria-selected="false" data-t="projects">Projects</button>
+      <button class="tab" role="tab" id="t-skills" aria-controls="skills" aria-selected="false" data-t="skills">Skills</button>
+      <button class="tab" role="tab" id="t-contact" aria-controls="contact" aria-selected="false" data-t="contact">Contact</button>
+    </div>
+    <button class="theme-btn" id="theme-btn" aria-label="Switch theme" title="Switch theme">
+      <svg id="theme-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about" class="active" role="tabpanel" aria-labelledby="t-about" tabindex="0">
+    <span class="eyebrow">Introduction</span>
+    <h2>About <span class="u">me</span></h2>
+    <p class="lede">I am an <strong>Applied Computer Technology</strong> student specializing in Software Engineering, with an interest in building reliable, scalable, and user-focused software solutions. I enjoy exploring how technology can address real-world problems through application development, database design, system integration, and cloud deployment.</p>
+    <p>My work focuses on turning ideas into functional applications while developing my skills in software engineering, cloud infrastructure, and DevOps practices. This portfolio presents my projects, technical skills, academic background, and professional development.</p>
+
+    <div class="stats">
+      <div class="stat"><b>3+</b><span>Projects</span></div>
+      <div class="stat"><b>6</b><span>Core domains</span></div>
+      <div class="stat"><b>8+</b><span>Technologies</span></div>
+      <div class="stat"><b>Open</b><span>To opportunities</span></div>
+    </div>
+
+    <h3>Career objective</h3>
+    <p>I aim to develop into a software engineering professional who can design, develop, test, deploy, and maintain reliable software systems. I want to strengthen my practical experience in full-stack development, cloud computing, and DevOps, and I am looking for opportunities to contribute to meaningful projects, collaborate with technical teams, and learn from experienced professionals.</p>
+
+    <h3>What I am interested in</h3>
+    <div class="grid two">
+      <div class="box"><div class="ico">⚙️</div><h4>Software engineering</h4><p>Requirements analysis, system design, and full-stack application development.</p></div>
+      <div class="box"><div class="ico">☁️</div><h4>Cloud computing</h4><p>Hosting, database connectivity, and configuring environments for deployment.</p></div>
+      <div class="box"><div class="ico">🔁</div><h4>DevOps</h4><p>Containers, Git workflows, and CI/CD as areas I am actively learning.</p></div>
+      <div class="box"><div class="ico">🔐</div><h4>Professional values</h4><p>Security and privacy of user data, clear documentation, and learning from feedback.</p></div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" role="tabpanel" aria-labelledby="t-resume" tabindex="0">
+    <span class="eyebrow">Background</span>
+    <h2>My <span class="u">resume</span></h2>
+
+    <h3>Education</h3>
+    <div class="tl">
+      <div class="box">
+        <span class="when">Study period / expected graduation — fill in</span>
+        <h4>Applied Computer Technology — Software Engineering</h4>
+        <p>Your institution</p>
+      </div>
+    </div>
+
+    <h3>Relevant coursework</h3>
+    <div style="overflow-x:auto">
+      <table class="table">
+        <tr><th>Software engineering</th><td>System Analysis and Design, Software Engineering units</td></tr>
+        <tr><th>Data and intelligent systems</th><td>Business Data Analytics, Applied Machine Learning</td></tr>
+        <tr><th>Infrastructure</th><td>Cloud Computing and Visualization, Hardware and Software Practicum</td></tr>
+        <tr><th>Application development</th><td>Mobile Programming, Computer Graphics</td></tr>
+        <tr><th>Professional practice</th><td>Introduction to Research Methods, Introduction to Project Management</td></tr>
+        <tr><th>Computing foundations</th><td>Digital Electronics</td></tr>
+      </table>
+    </div>
+
+    <h3>Practical experience</h3>
+    <p>Personal and academic projects are listed under <a href="#projects" data-goto="projects">Projects</a>. Add internships, volunteering, or work roles here, newest first.</p>
+
+    <h3>Certifications and achievements</h3>
+    <p>Add completed certifications, hackathons, and awards here. Leave this section out until you have items to show.</p>
+
+    <p style="margin-top:22px"><a class="btn" style="display:inline-block;text-decoration:none" href="#">Download CV ↓</a></p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" role="tabpanel" aria-labelledby="t-projects" tabindex="0">
+    <span class="eyebrow">Selected work</span>
+    <h2>Featured <span class="u">projects</span></h2>
+    <p class="lede">Each project below is a short summary — update the status lines to match what works today.</p>
+
+    <div class="grid">
+      <article class="box project">
+        <div class="head">
+          <span class="idx">01</span>
+          <span class="status">Status: update with implemented features</span>
+        </div>
+        <h4>ViFlow — Visitor management and access control</h4>
+        <p>Digitizes visitor registration and access verification in hostels and residential facilities. It reduces repetitive manual data entry, streamlines visitor invitations, and supports verification and tracking of visits.</p>
+        <p>Covers resident and visitor workflows, guard verification, QR-based access checks, role-based permissions, and database design. An invitation and an actual visit are separate entities, which is a good case study for interviews.</p>
+        <div class="tags"><span class="tag">Requirements analysis</span><span class="tag">Backend</span><span class="tag">Database design</span><span class="tag">Security</span></div>
+        <div class="links"><a href="#">Repository ↗</a><a href="#">Case study ↗</a></div>
+      </article>
+
+      <article class="box project">
+        <div class="head">
+          <span class="idx">02</span>
+          <span class="status">Status: update with implemented features</span>
+        </div>
+        <h4>Waxora — Waxing business website and booking system</h4>
+        <p>A website for a waxing business where customers can browse services, make bookings, submit reviews, and receive booking details by email.</p>
+        <p>Covers service categories, booking workflow, administrative access, email notifications, and database integration.</p>
+        <div class="tags"><span class="tag">Frontend</span><span class="tag">Forms</span><span class="tag">Database</span><span class="tag">UX</span></div>
+        <div class="links"><a href="#">Repository ↗</a><a href="#">Live demo ↗</a></div>
+      </article>
+
+      <article class="box project">
+        <div class="head">
+          <span class="idx">03</span>
+          <span class="status wip">Status: concept, update with progress</span>
+        </div>
+        <h4>CivicTrack — Mobile civic issue reporting</h4>
+        <p>A mobile application concept that connects citizens, administrators, and field workers through a structured process for reporting and resolving civic issues.</p>
+        <p>Covers role-based screens, citizen reports, location capture, camera integration, status tracking, and communication between roles.</p>
+        <div class="tags"><span class="tag">Kotlin</span><span class="tag">Android Studio</span><span class="tag">Permissions</span><span class="tag">Location</span></div>
+        <div class="links"><a href="#">Repository ↗</a></div>
+      </article>
+    </div>
+
+    <p class="note">For each project, add the problem, your contribution, architecture, challenges, testing, and lessons learned as a case study.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" role="tabpanel" aria-labelledby="t-skills" tabindex="0">
+    <span class="eyebrow">Capabilities</span>
+    <h2>Skills &amp; <span class="u">DevOps</span></h2>
+    <p class="lede">Only skills I have used or am actively learning. The bars reflect my honest level.</p>
+
+    <div class="grid two">
+      <div>
+        <h3>Languages and frontend</h3>
+        <div class="skill"><div class="row"><span>JavaScript / TypeScript</span><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+        <div class="skill"><div class="row"><span>HTML / CSS / Tailwind CSS</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+        <div class="skill"><div class="row"><span>React / Next.js</span><span>65%</span></div><div class="bar"><i data-w="65"></i></div></div>
+        <div class="skill"><div class="row"><span>Java / Python</span><span>55%</span></div><div class="bar"><i data-w="55"></i></div></div>
+      </div>
+      <div>
+        <h3>Backend, data, mobile</h3>
+        <div class="skill"><div class="row"><span>Node.js / Express / REST APIs</span><span>65%</span></div><div class="bar"><i data-w="65"></i></div></div>
+        <div class="skill"><div class="row"><span>SQL / PostgreSQL / Supabase</span><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+        <div class="skill"><div class="row"><span>Kotlin / Android</span><span>50%</span></div><div class="bar"><i data-w="50"></i></div></div>
+        <div class="skill"><div class="row"><span>Docker / Git / CI/CD</span><span>55%</span></div><div class="bar"><i data-w="55"></i></div></div>
+      </div>
+    </div>
+
+    <h3>Cloud and DevOps experience</h3>
+    <div class="grid two">
+      <div class="box"><div class="ico">📦</div><h4>Containers</h4><p>Running PostgreSQL locally with Docker and Docker Compose.</p></div>
+      <div class="box"><div class="ico">🔧</div><h4>Configuration</h4><p>Environment variables and keeping credentials out of repositories.</p></div>
+      <div class="box"><div class="ico">🚀</div><h4>Deployment</h4><p>Hosting Next.js projects and connecting them to hosted databases.</p></div>
+      <div class="box"><div class="ico">📡</div><h4>Learning</h4><p>CI/CD pipelines, logs and monitoring. Label experiments clearly as work in progress.</p></div>
+    </div>
+
+    <h3>How I work</h3>
+    <p>I break a project into small tasks, design the database before building features, track changes with Git, test critical functionality, and document setup steps. Most of my work so far is individual, and I describe it that way.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" role="tabpanel" aria-labelledby="t-contact" tabindex="0">
+    <span class="eyebrow">Say hello</span>
+    <h2>Get in <span class="u">touch</span></h2>
+    <p class="lede">I am open to internships, graduate positions, and collaborations. Send a message and I will reply by email.</p>
+
+    <form id="cf" novalidate>
+      <div class="field"><input type="text" name="name" placeholder="Your name" required aria-label="Your name"></div>
+      <div class="field"><input type="email" name="email" placeholder="Your email" required aria-label="Your email"></div>
+      <div class="field"><textarea name="msg" rows="5" placeholder="Your message" required aria-label="Your message"></textarea></div>
+      <button class="btn" type="submit">Send message →</button>
+    </form>
+
+    <div class="grid two" style="margin-top:26px">
+      <div class="box"><h4>Email</h4><p><a href="mailto:your.email@example.com">your.email@example.com</a></p></div>
+      <div class="box"><h4>Location</h4><p>Kenya · open to remote</p></div>
+    </div>
+
+    <p class="note">This form opens your email app with the message filled in. Replace the address in the script with your own.</p>
+  </section>
+</main>
+
+<footer>Built with HTML, CSS &amp; vanilla JavaScript · © <span id="yr"></span> <b>Wangui</b></footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+<script>
+(function(){
+  var EMAIL = 'your.email@example.com';
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('section'));
+  var toast = document.getElementById('toast');
+  var toastTimer;
+
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+
+  /* ---- tabs ---- */
+  function activate(id, push){
+    var found = false;
+    tabs.forEach(function(t){
+      var on = t.dataset.t === id;
+      t.setAttribute('aria-selected', on);
+      if(on) found = true;
+    });
+    if(!found) return;
+    panels.forEach(function(p){ p.classList.toggle('active', p.id === id); });
+    if(push && location.hash !== '#' + id) history.replaceState(null, '', '#' + id);
+    window.scrollTo({top:0, behavior:'smooth'});
+    if(id === 'skills') animateBars();
+  }
+
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ activate(t.dataset.t, true); });
+    t.addEventListener('keydown', function(e){
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if(!d) return;
+      e.preventDefault();
+      var n = tabs[(i + d + tabs.length) % tabs.length];
+      n.focus(); activate(n.dataset.t, true);
+    });
+  });
+
+  document.querySelectorAll('[data-goto]').forEach(function(a){
+    a.addEventListener('click', function(e){ e.preventDefault(); activate(a.dataset.goto, true); });
+  });
+
+  var initial = (location.hash || '').replace('#','');
+  if(initial && document.getElementById(initial)) activate(initial, false);
+
+  /* ---- skill bars ---- */
+  var barsDone = false;
+  function animateBars(){
+    if(barsDone) return;
+    barsDone = true;
+    document.querySelectorAll('.bar i').forEach(function(el, i){
+      setTimeout(function(){ el.style.width = el.dataset.w + '%'; }, 120 + i * 90);
+    });
+  }
+
+  /* ---- theme ---- */
+  var root = document.documentElement, tbtn = document.getElementById('theme-btn');
+  var saved = localStorage.getItem('portfolio-theme');
+  if(saved) root.dataset.theme = saved;
+  function syncIcon(){
+    document.getElementById('theme-icon').innerHTML = root.dataset.theme === 'dark'
+      ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'
+      : '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>';
+  }
+  syncIcon();
+  tbtn.addEventListener('click', function(){
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('portfolio-theme', root.dataset.theme);
+    syncIcon();
+  });
+
+  /* ---- copy email ---- */
+  document.getElementById('copy-btn').addEventListener('click', function(){
+    var btn = this;
+    function done(){ btn.textContent = 'Copied!'; showToast('Email copied to clipboard'); setTimeout(function(){ btn.textContent = 'Copy'; }, 1800); }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(EMAIL).then(done, function(){ location.href = 'mailto:' + EMAIL; });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = EMAIL; document.body.appendChild(ta); ta.select();
+      try{ document.execCommand('copy'); done(); }catch(e){ location.href = 'mailto:' + EMAIL; }
+      document.body.removeChild(ta);
+    }
+  });
+
+  /* ---- contact form ---- */
+  document.getElementById('cf').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = e.target;
+    if(!f.name.value.trim() || !f.email.value.trim() || !f.msg.value.trim()){
+      showToast('Please fill in all fields'); return;
+    }
+    location.href = 'mailto:' + EMAIL +
+      '?subject=' + encodeURIComponent('Portfolio message from ' + f.name.value) +
+      '&body=' + encodeURIComponent(f.msg.value + '\n\nFrom: ' + f.name.value + ' <' + f.email.value + '>');
+    showToast('Opening your email app…');
+  });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
