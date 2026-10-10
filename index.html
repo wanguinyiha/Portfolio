@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wangui — Software Engineering Portfolio</title>
 <meta name="description" content="Portfolio of Wangui, an Applied Computer Technology student specializing in software engineering. Projects, skills, resume, and contact.">
-<meta name="theme-color" content="#0b0d10">
+<meta name="theme-color" content="#f4f7fc">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="shell">
+<div class="wrap">
 
-<!-- ============ SIDEBAR ============ -->
-<aside class="side">
+<!-- ============ HERO ============ -->
+<header class="hero">
   <div class="avatar-wrap">
-    <div class="avatar"><img src="assets/profile.jpg" alt="Wangui" onerror="this.remove()"><span aria-hidden="true">W</span></div>
+    <div class="avatar"><img src="assets/profile.jpeg" alt="Wangui" onerror="this.remove()"><span aria-hidden="true">W</span></div>
     <span class="dot" title="Available"></span>
   </div>
   <h1>Wangui</h1>
@@ -27,7 +27,7 @@
   <div class="quick">
     <div class="qrow">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
-      <div><span class="k">Email</span><span class="v" id="email-text">your.email@example.com</span></div>
+      <div><span class="k">Email</span><a class="v" id="email-text" href="mailto:joycewangui580@gmail.com">joycewangui580@gmail.com</a></div>
       <button class="copy" id="copy-btn" type="button">Copy</button>
     </div>
     <div class="qrow">
@@ -41,34 +41,34 @@
   </div>
 
   <div class="socials">
-    <a href="#" aria-label="GitHub">GitHub</a>
-    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    <a href="https://github.com/wanguinyiha" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+    <a href="https://www.linkedin.com/in/joyce-kimani-82453132b/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
     <a href="#" aria-label="Download CV">CV</a>
   </div>
   <a class="cta" href="#contact" data-goto="contact">Get in touch →</a>
-</aside>
+</header>
 
-<!-- ============ MAIN ============ -->
-<main class="main">
-  <nav class="topbar" role="tablist" aria-label="Portfolio sections">
-    <div class="tabs">
-      <button class="tab" role="tab" id="t-about" aria-controls="about" aria-selected="true" data-t="about">About</button>
-      <button class="tab" role="tab" id="t-resume" aria-controls="resume" aria-selected="false" data-t="resume">Resume</button>
-      <button class="tab" role="tab" id="t-projects" aria-controls="projects" aria-selected="false" data-t="projects">Projects</button>
-      <button class="tab" role="tab" id="t-skills" aria-controls="skills" aria-selected="false" data-t="skills">Skills</button>
-      <button class="tab" role="tab" id="t-contact" aria-controls="contact" aria-selected="false" data-t="contact">Contact</button>
-    </div>
-    <button class="theme-btn" id="theme-btn" aria-label="Switch theme" title="Switch theme">
-      <svg id="theme-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-    </button>
-  </nav>
+<!-- ============ NAV ============ -->
+<nav class="topbar" role="tablist" aria-label="Portfolio sections">
+  <div class="tabs">
+    <button class="tab" role="tab" id="t-about" aria-controls="about" aria-selected="true" data-t="about">About</button>
+    <button class="tab" role="tab" id="t-resume" aria-controls="resume" aria-selected="false" data-t="resume">Resume</button>
+    <button class="tab" role="tab" id="t-projects" aria-controls="projects" aria-selected="false" data-t="projects">Projects</button>
+    <button class="tab" role="tab" id="t-skills" aria-controls="skills" aria-selected="false" data-t="skills">Skills</button>
+    <button class="tab" role="tab" id="t-contact" aria-controls="contact" aria-selected="false" data-t="contact">Contact</button>
+  </div>
+</nav>
 
+<main>
   <!-- ABOUT -->
   <section id="about" class="active" role="tabpanel" aria-labelledby="t-about" tabindex="0">
-    <span class="eyebrow">Introduction</span>
-    <h2>About <span class="u">me</span></h2>
-    <p class="lede">I am an <strong>Applied Computer Technology</strong> student specializing in Software Engineering, with an interest in building reliable, scalable, and user-focused software solutions. I enjoy exploring how technology can address real-world problems through application development, database design, system integration, and cloud deployment.</p>
-    <p>My work focuses on turning ideas into functional applications while developing my skills in software engineering, cloud infrastructure, and DevOps practices. This portfolio presents my projects, technical skills, academic background, and professional development.</p>
+    <div class="head">
+      <span class="eyebrow">Introduction</span>
+      <h2>About <span class="u">me</span></h2>
+    </div>
+    <p class="lede">Hey, I'm Wangui. I'm an <strong>Applied Computer Technology</strong> student focusing on Software Engineering. My interest in tech started with curiosity about how software works — and how technology can be used to solve real-world problems.</p>
+    <p>As I went deeper into my studies, coding became the part I enjoyed most — it lets me turn ideas into functional applications and understand how systems work behind the scenes. I like building practical applications for everyday challenges, especially full-stack work where I can touch the interface, the backend, the databases, and everything in between. I also enjoy picking up new tools along the way — figuring out how things like Docker make apps easier to run and deploy is genuinely fun for me.</p>
+    <p>Outside of tech, I read personal development books and look for ways to improve myself — anything that challenges me to think differently and grow as a person.</p>
 
     <div class="stats">
       <div class="stat"><b>3+</b><span>Projects</span></div>
@@ -77,8 +77,8 @@
       <div class="stat"><b>Open</b><span>To opportunities</span></div>
     </div>
 
-    <h3>Career objective</h3>
-    <p>I aim to develop into a software engineering professional who can design, develop, test, deploy, and maintain reliable software systems. I want to strengthen my practical experience in full-stack development, cloud computing, and DevOps, and I am looking for opportunities to contribute to meaningful projects, collaborate with technical teams, and learn from experienced professionals.</p>
+    <h3>Where I'm headed</h3>
+    <p>I want to grow into a software engineer who can take a project from "just an idea" to something reliable that's live and used. I'm sharpening my skills in full-stack development, cloud, and DevOps along the way, and I'm looking for internships or graduate roles where I can contribute, learn from experienced people, and keep building things that matter.</p>
 
     <h3>What I am interested in</h3>
     <div class="grid two">
@@ -91,8 +91,10 @@
 
   <!-- RESUME -->
   <section id="resume" role="tabpanel" aria-labelledby="t-resume" tabindex="0">
-    <span class="eyebrow">Background</span>
-    <h2>My <span class="u">resume</span></h2>
+    <div class="head">
+      <span class="eyebrow">Background</span>
+      <h2>My <span class="u">resume</span></h2>
+    </div>
 
     <h3>Education</h3>
     <div class="tl">
@@ -103,48 +105,38 @@
       </div>
     </div>
 
-    <h3>Relevant coursework</h3>
-    <div style="overflow-x:auto">
-      <table class="table">
-        <tr><th>Software engineering</th><td>System Analysis and Design, Software Engineering units</td></tr>
-        <tr><th>Data and intelligent systems</th><td>Business Data Analytics, Applied Machine Learning</td></tr>
-        <tr><th>Infrastructure</th><td>Cloud Computing and Visualization, Hardware and Software Practicum</td></tr>
-        <tr><th>Application development</th><td>Mobile Programming, Computer Graphics</td></tr>
-        <tr><th>Professional practice</th><td>Introduction to Research Methods, Introduction to Project Management</td></tr>
-        <tr><th>Computing foundations</th><td>Digital Electronics</td></tr>
-      </table>
-    </div>
-
     <h3>Practical experience</h3>
     <p>Personal and academic projects are listed under <a href="#projects" data-goto="projects">Projects</a>. Add internships, volunteering, or work roles here, newest first.</p>
 
     <h3>Certifications and achievements</h3>
     <p>Add completed certifications, hackathons, and awards here. Leave this section out until you have items to show.</p>
 
-    <p style="margin-top:22px"><a class="btn" style="display:inline-block;text-decoration:none" href="#">Download CV ↓</a></p>
+    <p class="actions"><a class="btn" href="#">Download CV ↓</a></p>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" role="tabpanel" aria-labelledby="t-projects" tabindex="0">
-    <span class="eyebrow">Selected work</span>
-    <h2>Featured <span class="u">projects</span></h2>
+    <div class="head">
+      <span class="eyebrow">Selected work</span>
+      <h2>Featured <span class="u">projects</span></h2>
+    </div>
     <p class="lede">Each project below is a short summary — update the status lines to match what works today.</p>
 
     <div class="grid">
       <article class="box project">
-        <div class="head">
+        <div class="phead">
           <span class="idx">01</span>
-          <span class="status">Status: update with implemented features</span>
+          <span class="status">Status: live</span>
         </div>
         <h4>ViFlow — Visitor management and access control</h4>
         <p>Digitizes visitor registration and access verification in hostels and residential facilities. It reduces repetitive manual data entry, streamlines visitor invitations, and supports verification and tracking of visits.</p>
-        <p>Covers resident and visitor workflows, guard verification, QR-based access checks, role-based permissions, and database design. An invitation and an actual visit are separate entities, which is a good case study for interviews.</p>
+        <p>Covers resident and visitor workflows, guard verification, unique access checks, role-based permissions, and database design. An invitation and an actual visit are separate entities, which is a good case study for interviews.</p>
         <div class="tags"><span class="tag">Requirements analysis</span><span class="tag">Backend</span><span class="tag">Database design</span><span class="tag">Security</span></div>
-        <div class="links"><a href="#">Repository ↗</a><a href="#">Case study ↗</a></div>
+        <div class="links"><a href="https://github.com/wanguinyiha/viflow" target="_blank" rel="noopener">Repository ↗</a><a href="https://viflow.netlify.app" target="_blank" rel="noopener">Live demo ↗</a></div>
       </article>
 
       <article class="box project">
-        <div class="head">
+        <div class="phead">
           <span class="idx">02</span>
           <span class="status">Status: update with implemented features</span>
         </div>
@@ -156,7 +148,7 @@
       </article>
 
       <article class="box project">
-        <div class="head">
+        <div class="phead">
           <span class="idx">03</span>
           <span class="status wip">Status: concept, update with progress</span>
         </div>
@@ -173,8 +165,10 @@
 
   <!-- SKILLS -->
   <section id="skills" role="tabpanel" aria-labelledby="t-skills" tabindex="0">
-    <span class="eyebrow">Capabilities</span>
-    <h2>Skills &amp; <span class="u">DevOps</span></h2>
+    <div class="head">
+      <span class="eyebrow">Capabilities</span>
+      <h2>Skills &amp; <span class="u">DevOps</span></h2>
+    </div>
     <p class="lede">Only skills I have used or am actively learning. The bars reflect my honest level.</p>
 
     <div class="grid two">
@@ -208,8 +202,10 @@
 
   <!-- CONTACT -->
   <section id="contact" role="tabpanel" aria-labelledby="t-contact" tabindex="0">
-    <span class="eyebrow">Say hello</span>
-    <h2>Get in <span class="u">touch</span></h2>
+    <div class="head">
+      <span class="eyebrow">Say hello</span>
+      <h2>Get in <span class="u">touch</span></h2>
+    </div>
     <p class="lede">I am open to internships, graduate positions, and collaborations. Send a message and I will reply by email.</p>
 
     <form id="cf" novalidate>
@@ -220,11 +216,11 @@
     </form>
 
     <div class="grid two" style="margin-top:26px">
-      <div class="box"><h4>Email</h4><p><a href="mailto:your.email@example.com">your.email@example.com</a></p></div>
+      <div class="box"><h4>Email</h4><p><a href="mailto:joycewangui580@gmail.com">joycewangui580@gmail.com</a></p></div>
       <div class="box"><h4>Location</h4><p>Kenya · open to remote</p></div>
     </div>
 
-    <p class="note">This form opens your email app with the message filled in. Replace the address in the script with your own.</p>
+    <p class="note">This form opens your email app with the message filled in.</p>
   </section>
 </main>
 
@@ -236,7 +232,7 @@
 <script src="script.js"></script>
 <script>
 (function(){
-  var EMAIL = 'your.email@example.com';
+  var EMAIL = 'joycewangui580@gmail.com';
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
   var panels = Array.prototype.slice.call(document.querySelectorAll('section'));
   var toast = document.getElementById('toast');
@@ -291,22 +287,6 @@
       setTimeout(function(){ el.style.width = el.dataset.w + '%'; }, 120 + i * 90);
     });
   }
-
-  /* ---- theme ---- */
-  var root = document.documentElement, tbtn = document.getElementById('theme-btn');
-  var saved = localStorage.getItem('portfolio-theme');
-  if(saved) root.dataset.theme = saved;
-  function syncIcon(){
-    document.getElementById('theme-icon').innerHTML = root.dataset.theme === 'dark'
-      ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'
-      : '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>';
-  }
-  syncIcon();
-  tbtn.addEventListener('click', function(){
-    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('portfolio-theme', root.dataset.theme);
-    syncIcon();
-  });
 
   /* ---- copy email ---- */
   document.getElementById('copy-btn').addEventListener('click', function(){
